@@ -1,0 +1,113 @@
+/* .main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+.containerApp{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  min-height: 660px;
+  padding: 2.5rem;
+  margin-top: 3rem;
+  border-radius: 20px;
+border: 1px solid var(--white-200, #F3F3F3);
+background: var(--white-50, #FFF);
+
+/* Shadow/09 */
+box-shadow: 0px 4px 24px 0px rgba(83, 51, 171, 0.15);
+backdrop-filter: blur(40px);
+}
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.process{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 23px;
+  gap: 15px;
+}
+.processDiv{
+  width: 100px;
+  height: 8px;
+  background-color: #E5E5E5;
+  border-radius: 5px;
+}
+.processDivActive{
+  background-color: #3244D7;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  text-align: center;
+  color: #151920;
+  font-size: 20px;
+}
+.containerCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  gap: 40px;
+}
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 38px 30px;
+  width: 365px;
+  height: 218px;
+  border-radius: 20px;
+border: 1px solid var(--white-300, #E5E5E5);
+background: var(--secondary-ffffff, #FFF);
+text-align: center;
+cursor: pointer;
+transition: all 0.5;
+}
+
+.card:hover{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transform: scale(1.01);
+}
+
+.cardActive{
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08), 0px 0px 0px 4px rgba(103, 110, 118, 0.16);
+}
+.cardh6{
+  font-size: 20px;
+  font-weight: 700;
+  color: #151920;
+}
+.cardp{
+  font-size: 14px;
+font-style: normal;
+font-weight: 400;
+color: #686D75;
+text-align: center;
+}
+.cardRadio{
+  padding: 10px;
+background-color: #FFFFFF;
+border-radius: 100px;
+box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08);
+}
+.cardRadioActive{
+  background-color: #151920;
+}
