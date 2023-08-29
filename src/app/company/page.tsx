@@ -1,15 +1,26 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import Form from './components/Form/Form'
 import Profile from './components/Profile/Profile'
 import style from './company.module.css'
 import Image from 'next/image'
 import arrow from './arrow-right.svg'
 import Link from 'next/link'
+import ProcessBars from '../components/ProcessBars'
 
 
-const page = () => {
+const Page = () => {
+  const [selectedCard, setSelectedCard] = useState('');
+
+  const handleCardClick = (cardTitle: string) => {
+    setSelectedCard(cardTitle);
+  };
   return (
     <main className={style.main}>
+      <section className='process'>
+        <ProcessBars isSelected={selectedCard === 'I`m an Agency'} />
+        <ProcessBars isSelected={selectedCard === 'I`m a Company!'} />
+      </section>
       <section className={style.containerForm}>
         <Form />
         <Profile />
@@ -24,4 +35,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

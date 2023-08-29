@@ -6,7 +6,7 @@
 } */
 .containerApp{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   width: 80%;
@@ -16,6 +16,7 @@
   border-radius: 20px;
 border: 1px solid var(--white-200, #F3F3F3);
 background: var(--white-50, #FFF);
+
 
 /* Shadow/09 */
 box-shadow: 0px 4px 24px 0px rgba(83, 51, 171, 0.15);
